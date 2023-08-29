@@ -373,4 +373,8 @@ a {
     width: 58.896px;
     height: 17.235px;
   }
+
+  .hero__bg-img {
+    content: url("../images/phone-bg.png");
+  }
 }

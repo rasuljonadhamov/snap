@@ -1,0 +1,376 @@
+/* epilogue-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/epilogue-v17-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* epilogue-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Epilogue";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/epilogue-v17-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  font-family: "Epilogue", sans-serif;
+  height: 100%;
+  font-size: 62.5%;
+  color: #686868;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* HEADER SECTION START */
+
+.header {
+}
+
+.container {
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 2.1rem 0;
+}
+
+.site-logo {
+  margin-right: 6.2rem;
+}
+
+.site-nav {
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  gap: 4rem;
+}
+
+.sitenav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.drop_logo-hover {
+  display: none;
+}
+
+.sitenav-item:hover .drop__logo {
+  display: none;
+}
+
+.sitenav-item:hover .drop_logo-hover {
+  display: block;
+}
+
+.features__list {
+  position: absolute;
+  bottom: -180px;
+  left: -50px;
+  border-radius: 10px;
+  background: var(--pure-white, #fff);
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 2.4rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.featurest__item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.6rem;
+  cursor: pointer;
+}
+
+.featurest__item:last-child {
+  margin-bottom: 0;
+}
+
+.sitenav-item:hover .features__list {
+  visibility: visible;
+  opacity: 1;
+}
+
+.company__list {
+  position: absolute;
+  border-radius: 10px;
+  background: var(--pure-white, #fff);
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  width: 116px;
+  flex-direction: column;
+  gap: 1.6rem;
+  bottom: -150px;
+  left: -15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.sitenav-item:hover .company__list {
+  visibility: visible;
+  opacity: 1;
+}
+
+.company__item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.company__item {
+  display: block;
+  cursor: pointer;
+}
+
+.sitenav__btns {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.register__btn {
+  padding: 1.3rem 2.3rem;
+  border-radius: 14px;
+  border: 1.5px solid var(--black, #151515);
+}
+
+.media__logo {
+  display: none;
+}
+
+/* HEADER SECTION END */
+
+/* HERO SECTION START */
+
+.hero {
+  padding-top: 6.7rem;
+  padding-bottom: 13rem;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-wrapper {
+  width: 100%;
+  max-width: 520px;
+}
+
+.hero__title {
+  color: #151515;
+  font-size: 8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 8rem; /* 100% */
+  letter-spacing: -1.111px;
+  margin-bottom: 4.8rem;
+}
+
+.hero__desc {
+  color: #686868;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem;
+  margin-bottom: 5.1rem;
+}
+
+.hero__btn {
+  border-radius: 15px;
+  background: #151515;
+  padding: 1.5rem 2.8rem 1.3rem 3.1rem;
+  color: #fafafa;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem; /* 155.556% */
+  letter-spacing: -0.25px;
+  border: 1px solid transparent;
+  margin-bottom: 11.6rem;
+  transition: all 0.3s ease-in;
+}
+
+.hero__btn:hover {
+  color: #151515;
+  background: #fafafa;
+  border: 1px solid var(--black, #151515);
+}
+
+.hero__logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4.1rem;
+}
+
+.hero__logo1 {
+  width: 113.144px;
+  height: 20px;
+}
+
+.hero__logo2 {
+  width: 73px;
+  height: 35.902px;
+}
+
+.hero__logo3 {
+  width: 89.313px;
+  height: 20px;
+}
+
+.hero__logo4 {
+  width: 82.014px;
+  height: 24px;
+}
+
+.hero__bg-img {
+  width: 480px;
+  height: 640px;
+}
+
+/* HERO SECTION END */
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 0 1.6rem;
+  }
+
+  .header-container {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .sitenav__btns {
+    display: none;
+  }
+
+  .media__logo {
+    display: block;
+  }
+
+  .site-logo {
+    margin-right: auto;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 3.6rem;
+    margin-bottom: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.2rem;
+    letter-spacing: -0.5px;
+    margin-top: 4.7rem;
+  }
+
+  .hero__desc {
+    margin-bottom: 2.4rem;
+    color: #686868;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
+
+  .hero__logo-wrapper {
+    gap: 2.4rem;
+  }
+
+  .hero__btn {
+    margin-bottom: 4.8rem;
+  }
+
+  .hero__bg-img {
+    width: 375px;
+    height: 281.25px;
+  }
+
+  .hero__logo1 {
+    width: 81.251px;
+    height: 14.362px;
+  }
+
+  .hero__logo2 {
+    width: 52.867px;
+    height: 26px;
+  }
+
+  .hero__logo3 {
+    width: 64.138px;
+    height: 14.362px;
+  }
+
+  .hero__logo4 {
+    width: 58.896px;
+    height: 17.235px;
+  }
+}
